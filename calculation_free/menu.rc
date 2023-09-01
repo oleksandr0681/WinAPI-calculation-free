@@ -1,0 +1,27 @@
+// Файл ресурсов меню menu.rc для программы "Calculation".
+
+#include "menu.h"
+
+main_menu MENU
+{
+POPUP "Файл"
+        {
+        MENUITEM "Сохранить как...", MI_SAVE
+        MENUITEM SEPARATOR
+	MENUITEM "Выход", MI_EXIT
+        }
+POPUP "Расчёт"
+        {
+        MENUITEM "Расчёт стоимости изготовления изделия", MI_PRIME_COST
+//      MENUITEM "Расчёт приведенной стоимости одного часа работы установки",
+//              MI_COST_HOUR                                        
+        MENUITEM "Расчёт натяжения стропа", MI_STRETCH        
+        }
+POPUP "Справка"
+        {
+        MENUITEM "Лицензионный договор", MI_LICENSE
+        MENUITEM SEPARATOR
+        MENUITEM "О программе", MI_ABOUT
+        }
+}
+
